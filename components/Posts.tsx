@@ -1,5 +1,8 @@
+import Post from './Post'
 export default function Posts(){
     return(
-        <div></div>
+        <div>
+            <Post/>
+        </div>
     )
 }

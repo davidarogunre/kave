@@ -6,7 +6,7 @@ import SportsBaseballOutlinedIcon from '@mui/icons-material/SportsBaseballOutlin
 import DropDown from './DropDown'
 export default function Sidebar(){
     return(
-        <div className="pb-[30px] fixed h-full w-[270px] text-white border-r-[0.07rem] border-[#2e2e2e] flex flex-col items-center overflow-hidden hover:overflow-y-scroll overlay hover:overflow-x-hidden">
+        <div className="pb-[30px] fixed h-full w-[240px] text-white border-r-[0.07rem] border-[#2e2e2e] flex flex-col items-center alternate hover:overlay  overflow-y-scroll  hover:overflow-x-hidden">
             <div className="flex flex-col items-center w-11/12 mt-[40px]">
                 <div className='flex w-10/12 gap-4  text-[#858585] '>
                    <HomeOutlinedIcon className='w-[20px] h-[25px]'/> <span className='text-[17px]'>Home</span>

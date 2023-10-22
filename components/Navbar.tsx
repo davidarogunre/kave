@@ -1,9 +1,11 @@
 import {GiMountainCave} from 'react-icons/gi'
 
+import ProfileSection from './ProfileSection'
 interface NavbarProps{
     incognito:boolean
+    username:string | null | undefined
 }
-export default function Navbar({incognito}:NavbarProps){
+export default function Navbar({incognito, username}:NavbarProps){
     return (
         <div className="w-full bg-transparent h-[70px] backdrop-blur-md border-b-[0.0012rem] border-[#2e2e2e] fixed flex justify-center z-[500]">
             <div className="w-11/12 h-full text-white flex justify-between items-center">
@@ -21,6 +23,9 @@ export default function Navbar({incognito}:NavbarProps){
                     <button>Log In</button>
                     <button className="bg-white text-black pt-[7px] pb-[7px] pl-[12px] pr-[12px] rounded-md hover:bg-slate-200">Sign Up</button>
                 </div>)}
+                {!incognito && (
+                    <ProfileSection username={username}/>
+                )}
             </div>
         </div>
     )
